@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>營收</title>
+	<style type="text/css">
+		caption{font-weight: bold;background: #3b3838;padding: 30px;font-size: 30px;margin-top: 50px;}
+		#First{color: black;}
+		#Second{background: #7f7f7f;border-left-style: hidden;}
+		#Third{background: #ff9999;border-left-style: hidden;}
+		#Fourth{background: #99ccff;border-left-style: hidden;}
+		tfoot{color: gray;}
+		#navbar {
+		  overflow: hidden;
+		  padding: 65px 25px;
+		  transition: 0.4s;
+		  position: fixed; top: 0; z-index: 99;
+		  width: 100%;
+		  background: rgba(255,255,255,0);
+		  box-sizing: border-box;
+		  font-family: "微軟正黑體";
+		}
+		#navbar a {
+		  float: left;
+		  color: white;
+		  text-align: center;
+		  padding: 12px;
+		  text-decoration: none;
+		  font-size: 18px;
+		  line-height: 25px;
+		  border-radius: 4px;
+		  
+		}
+		#navbar a:hover {
+		  background-color: rgba(114,129,140,0.3);
+		  transition: 0.4s;
+		}
+		#navbar #nav05:hover{
+		  cursor: help;
+		}
+
+		#navbar #logo {
+		  font-size: 35px;
+		  font-weight: bold;
+		  transition: 0.4s;
+		}
+		#navbar-right {
+		  float: right;
+		}
+		#box{
+			height: 150px;background: #3b3838;
+		}
+		table{
+			margin-left:auto; 
+			margin-right:auto;
+		}
+	</style>
+</head>
+<body style="text-align: center; font-family: MS UI Gothic; color: white;font-size: 25px;margin: 0;">
+	
+<table>
+	<div id="navbar" id="top">
+		<a class="active" href="index.html" id="logo">馬來貘的第一個家</a>
+		<div id="navbar-right">
+			<a id="nav01" href="introduce.html" >馬來介紹</a>
+			<a id="nav02" href="merchandise.html">馬來周邊</a>
+			<a id="nav03" href="photo.html">馬來美照</a>
+			<a id="nav04" href="fuming.html">作者本人</a>
+			<a id="nav05" href="resume.html">作者履歷</a>
+			<a id="nav06" href="about.html">聯絡馬來</a>
+		</div>
+	</div>
+	<div id="box"></div>
+	<caption>有意申請改掛電子類股上市公司</caption>
+
+	<thead>
+		<tr id="First">
+			<td ></td>
+			<td colspan="2" >101年</td>
+			<td colspan="2" >102年</td>
+		</tr>
+		<tr id="Second">
+			<td ></td>
+			<td >營收（百萬）</td>
+			<td >純益（百萬）</td>
+			<td >營收（百萬）</td>
+			<td >純益（百萬）</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr id="Third">
+			<td >中興</td>
+			<td >3953</td>
+			<td >1245</td>
+			<td >3687</td>
+			<td >763</td>
+		</tr>
+		<tr id="Fourth">
+			<td >飛瑞</td>
+			<td >5193</td>
+			<td >1420</td>
+			<td >4143</td>
+			<td>932</td>
+		</tr>
+	</tbody>
+	<tfoot>
+		<tr>
+			<td colspan="5">註：年度營收為各公司結算資料，實際數字依財務公告為準。</td>
+		</tr>
+	</tfoot>
+		
+</table>
+</body>
+</html>

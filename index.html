@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="CSS/index.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>馬來貘 | 給你最天然的好看</title>
+	<style>
+		html {
+			scroll-behavior: smooth;
+		}
+	</style>
+</head>
+<body>
+	<div id="navbar" id="top">
+		<a class="active" href="index.html" id="logo">馬來貘的第一個家</a>
+		<div id="navbar-right">
+			<a id="nav01" href="introduce.html" >馬來介紹</a>
+			<a id="nav02" href="merchandise.html">馬來周邊</a>
+			<a id="nav03" href="photo.html">馬來美照</a>
+			<a id="nav04" href="fuming.html">作者本人</a>
+			<a id="nav05" href="resume.html">作者履歷</a>
+			<a id="nav06" href="about.html">聯絡馬來</a>
+		</div>
+	</div>
+	<div>
+		<img src="IMG/Tapirus_01.png" width="100%">
+	</div>
+	
+	<div id="first">
+		<h1 id="first-title">世界最可愛的動物</h1>
+		<button id="first-btn" class="mh11" onclick="javascript:location.href='photo.html'">看更多美照</button>
+	</div>
+
+	<div id="second">
+		<h1 id="second-title">馬來貘的日常</h1>
+		<p id="second-content">
+			馬來貘平均壽命約20至25年，但是不論是野生或在動物園內的，都有機會活到30歲，大約3至4歲就會發育成熟。繁殖期並不固定，約在四到六月之間；而懷孕期約為13個月，每次只生一胎，雌貘兩年才會生一胎。幼貘的哺乳期為三到六個月，出生時幼貘約6.8公斤重。貘具有長長的鼻子，鼻子相當敏銳，可以偵測食物、危險，也可以在水裡伸出鼻子呼吸，由於視力不好，平常以聽覺及嗅覺為主，當馬來貘受到威脅時，牠可以拔腿就跑，若是跑得不夠快，還可以躲到水裡，伸出鼻子，其實牠們也可以靠有力的下顎及尖銳的牙齒來保衛自己。<br>
+
+			平時牠們是獨居的，擁有廣大的領域，在與其牠貘相接的地帶，會以噴射尿液跟植物的方式來劃清界線，牠們也會發出高頻的聲音來做溝通；而在雨林中緩慢的步行，途經別的貘的領域時，也會留下味道以為記號。馬來貘只吃素，喜好植物的嫩枝芽、樹葉、水果、草及水生植物，牠們的食性很廣，能吃將近一百種的植物，且主要會在晨昏時採食，因此雖分類偏向夜行性動物，卻非完全的夜行性動物，是為曙暮性動物，在深夜，馬來貘也是會睡個覺的。馬來貘喜歡在泥、沙中打滾，喜好居住在水邊，一方面方便打滾、洗澡、游泳，一方面也比較安全。
+		</p>
+		<img src="IMG/Tapirus_02.jpg" width="100%">
+	</div>
+
+	<div id="third">
+		<div id="third-content">
+			<a href="1027-2.html">觀看馬來貘的營收</a>
+		</div>
+	</div>
+
+	<div id="forth">
+		<div id="forth-content">
+			<a href="1027-3.html">馬來貘の旅平險保費試算</a>
+		</div>
+	</div>
+	<div id="fifth">
+		<div id="fifth-content">
+			<a href="1120.html">馬來貘のjsp試作</a>
+		</div>
+	</div>
+	
+	<div id="footer">
+		<div id="footer-content">
+			<a href="#top">TOP</a>
+		</div>
+	</div>
+
+
+
+
+	<script>
+	window.onscroll = function() {scrollFunction()};
+	function scrollFunction() {
+		if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+			change_nab_logo();
+
+		}
+		else {
+			document.getElementById("navbar").style.padding = "65px 25px";
+			document.getElementById("navbar").style.background = "rgba(255,255,255,0)";
+			document.getElementById("logo").style.color = "white";
+			document.getElementById("nav01").style.color = "white";
+			document.getElementById("nav02").style.color = "white";
+			document.getElementById("nav03").style.color = "white";
+			document.getElementById("nav04").style.color = "white";
+			document.getElementById("nav05").style.color = "white";
+			document.getElementById("nav06").style.color = "white";
+			document.getElementById("logo").style.fontSize = "35px";
+		}
+	}
+
+	function change_nab_logo() {
+		document.getElementById("navbar").style.padding = "25px 25px";
+		document.getElementById("navbar").style.background = "rgba(255,255,255,0.8)";
+		document.getElementById("logo").style.color = "#262F40";
+		document.getElementById("nav01").style.color = "#262F40";
+		document.getElementById("nav02").style.color = "#262F40";
+		document.getElementById("nav03").style.color = "#262F40";
+		document.getElementById("nav04").style.color = "#262F40";
+		document.getElementById("nav05").style.color = "#262F40";
+		document.getElementById("nav06").style.color = "#262F40";
+		document.getElementById("logo").style.fontSize = "25px";
+	}
+	</script>
+
+
+	
+</body>
+</html>

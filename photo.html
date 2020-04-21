@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>馬來貘 | 照片</title>
+	<link rel="stylesheet" type="text/css" href="CSS/photo.css">
+</head>
+<body>
+	<div id="navbar" id="top">
+		<a class="active" href="index.html" id="logo">馬來貘的第一個家</a>
+		<div id="navbar-right">
+			<a id="nav01" href="introduce.html" >馬來介紹</a>
+			<a id="nav02" href="merchandise.html">馬來周邊</a>
+			<a id="nav03" href="photo.html">馬來美照</a>
+			<a id="nav04" href="fuming.html">作者本人</a>
+			<a id="nav05" href="resume.html">作者履歷</a>
+			<a id="nav06" href="about.html">聯絡馬來</a>
+		</div>
+	</div>
+	<div class="box"></div>
+	<div class="header">
+		<h1>貘貘照片</h1>
+		<p>美麗的馬來貘^.<</p>
+	</div>
+
+	<!-- Photo Grid -->
+	<div class="row"> 
+		<div class="column">
+		    <img src="IMG/photo_01.jpg" style="width:100%">
+		    <img src="IMG/photo_02.jpg" style="width:100%">
+		    <img src="IMG/photo_03.jpg" style="width:100%">
+		    <img src="IMG/photo_04.jpg" style="width:100%">
+		    <img src="IMG/photo_05.jpg" style="width:100%">
+		    
+	  	</div>
+		<div class="column">
+			<img src="IMG/photo_06.jpg" style="width:100%">
+		    <img src="IMG/photo_07.jpg" style="width:100%">
+		    <img src="IMG/photo_01.jpg" style="width:100%">
+		    <img src="IMG/photo_09.jpg" style="width:100%">
+		    <img src="IMG/photo_10.jpg" style="width:100%">
+		</div>  
+	  	<div class="column">
+		    <img src="IMG/photo_01.jpg" style="width:100%">
+		    <img src="IMG/photo_04.jpg" style="width:100%">
+		    <img src="IMG/photo_09.jpg" style="width:100%">
+		    <img src="IMG/photo_11.jpg" style="width:100%">
+		    <img src="IMG/photo_01.jpg" style="width:100%">
+	  	</div>
+	  	
+	</div>
+
+	<script>
+	window.onscroll = function() {scrollFunction()};
+	function scrollFunction() {
+		if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+			change_nab_logo();
+
+		}
+		else {
+			document.getElementById("navbar").style.padding = "65px 25px";
+			document.getElementById("navbar").style.background = "rgba(255,255,255,0)";
+			document.getElementById("logo").style.color = "white";
+			document.getElementById("nav01").style.color = "white";
+			document.getElementById("nav02").style.color = "white";
+			document.getElementById("nav03").style.color = "white";
+			document.getElementById("nav04").style.color = "white";
+			document.getElementById("nav05").style.color = "white";
+			document.getElementById("nav06").style.color = "white";
+			document.getElementById("logo").style.fontSize = "35px";
+		}
+	}
+
+	function change_nab_logo() {
+		document.getElementById("navbar").style.padding = "25px 25px";
+		document.getElementById("navbar").style.background = "rgba(255,255,255,0.8)";
+		document.getElementById("logo").style.color = "#262F40";
+		document.getElementById("nav01").style.color = "#262F40";
+		document.getElementById("nav02").style.color = "#262F40";
+		document.getElementById("nav03").style.color = "#262F40";
+		document.getElementById("nav04").style.color = "#262F40";
+		document.getElementById("nav05").style.color = "#262F40";
+		document.getElementById("nav06").style.color = "#262F40";
+		document.getElementById("logo").style.fontSize = "25px";
+	}
+	</script>
+
+</body>
+</html>

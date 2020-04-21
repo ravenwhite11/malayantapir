@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>馬來貘 | 周邊商品</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="CSS/merchandise.css">
+
+</head>
+<body>
+	
+	<img src="IMG/merchandise_02.png" width="100%">
+	<div id="navbar" id="top">
+		<a class="active" href="index.html" id="logo">馬來貘的第一個家</a>
+		<div id="navbar-right">
+			<a id="nav01" href="introduce.html" >馬來介紹</a>
+			<a id="nav02" href="merchandise.html">馬來周邊</a>
+			<a id="nav03" href="photo.html">馬來美照</a>
+			<a id="nav04" href="fuming.html">作者本人</a>
+			<a id="nav05" href="resume.html">作者履歷</a>
+			<a id="nav06" href="about.html">聯絡馬來</a>
+		</div>
+	</div>
+	
+	<div class="container ALL">
+		<div class="row one">
+			<div class="col-5 first">
+				
+				<img src="IMG/merchandise_01.jpg" id="goods_air">
+				<div id="myModal" class="modal">
+					<span class="close">&times;</span>
+					<img class="modal-content" id="img01">
+					<div id="caption"></div>
+				</div>
+			</div>
+			<div class="col-5 offset-1 second">
+				<h1>來貘扭扭樂</h1><hr>
+				<h5><span class="h5_bloder">貘式：</span>發火的貘、12趾貘、骨骼外露的貘、飛天的貘、有毒的貘、加勒比海龍蝦貘、背小籠包的貘</h5>
+				
+				<h5><span class="h5_bloder">價格：</span>1000$(組)</h5>
+				<h5><span class="h5_bloder">數量：</span>50個</h5>
+			</div>
+		</div>
+		<h2>商品照片</h2>
+		<div id="store_img">
+			<img src="IMG/merchandise_03.jpg" width="100%">
+			<img src="IMG/merchandise_04.jpg" width="100%">
+			<img src="IMG/merchandise_05.jpg" width="100%">
+		</div>
+	</div>
+
+
+	<div class="topbox"></div>
+
+
+
+
+
+	<script>
+	window.onscroll = function() {scrollFunction()};
+	function scrollFunction() {
+		if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+			change_nab_logo();
+
+		}
+		else {
+			document.getElementById("navbar").style.padding = "65px 25px";
+			document.getElementById("navbar").style.background = "rgba(255,255,255,0)";
+			document.getElementById("logo").style.color = "white";
+			document.getElementById("nav01").style.color = "white";
+			document.getElementById("nav02").style.color = "white";
+			document.getElementById("nav03").style.color = "white";
+			document.getElementById("nav04").style.color = "white";
+			document.getElementById("nav05").style.color = "white";
+			document.getElementById("nav06").style.color = "white";
+			document.getElementById("logo").style.fontSize = "35px";
+		}
+	}
+
+	function change_nab_logo() {
+		document.getElementById("navbar").style.padding = "25px 25px";
+		document.getElementById("navbar").style.background = "rgba(255,255,255,0.8)";
+		document.getElementById("logo").style.color = "#262F40";
+		document.getElementById("nav01").style.color = "#262F40";
+		document.getElementById("nav02").style.color = "#262F40";
+		document.getElementById("nav03").style.color = "#262F40";
+		document.getElementById("nav04").style.color = "#262F40";
+		document.getElementById("nav05").style.color = "#262F40";
+		document.getElementById("nav06").style.color = "#262F40";
+		document.getElementById("logo").style.fontSize = "25px";
+	}
+	</script>
+	<script>
+	// Get the modal
+	var modal = document.getElementById("myModal");
+
+	// Get the image and insert it inside the modal - use its "alt" text as a caption
+	var img = document.getElementById("goods_air");
+	var modalImg = document.getElementById("img01");
+	var captionText = document.getElementById("caption");
+	img.onclick = function(){
+	  modal.style.display = "block";
+	  modalImg.src = this.src;
+	  captionText.innerHTML = this.alt;
+	}
+
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close")[0];
+
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() { 
+	  modal.style.display = "none";
+	}
+	</script>
+
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

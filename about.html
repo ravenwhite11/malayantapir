@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>馬來貘 | 聯絡我們</title>
+
+	<style>	
+	.button2 
+	{
+	    display: inline-block;
+	    font-family:微軟正黑體;
+	    cursor: pointer;
+	    text-align: center;
+		text-decoration: none;
+	    height:10px
+	    outline: none;
+	    color: white;
+	    background-color:  #888888;
+	    border: none;
+	    border-radius: 15px;
+	    box-shadow: 0 9px #999;
+	    cursor: -webkit-grab; cursor: grab;
+	}
+    .button2:hover
+    {
+    	background-color: #44444
+    }
+    .button2:active
+    {
+        background-color: #444444;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+
+	#candybox2{ width: 100%; font-family: fangsong;
+		color: gray; font-size: 50px;
+		position: absolute; top: 50%; left: -3%;
+		-webkit-transition:all .5s ease-in-out;
+		-moz-transition:all .5s ease-in-out;
+		-o-transition:all .5s ease-in-out;
+		-ms-transition:all .5s ease-in-out;}
+	#candybox2:hover { color: #ff99cc;
+		-webkit-transition:all .5s ease-in-out;
+		-moz-transition:all .5s ease-in-out;
+		-o-transition:all .5s ease-in-out;
+		-ms-transition:all .5s ease-in-out;}
+			    
+	div{ font-size: 20px; text-align: center;}
+		
+	.scr1,.scr2,.scr3,.scr4{ 
+		position: fixed; top:20%; left:32%; z-index: 9998;height: 200px;width:330px; 
+		background-color:transparent; background-image: url(./IMG/whi1.png);
+		background-size: cover; 
+		line-height: 18px; color: gray;
+		padding: 100px; border:10px solid #888888;
+		display: none;}
+	.scr1>.close{ color: gray; position:absolute; top: 1px; right: 2px; cursor:pointer;}
+	.scr2>.close{ color: gray; position:absolute; top: 1px; right: 2px; cursor:pointer;}
+  	.scr3>.close{ color: gray; position:absolute; top: 1px; right: 2px; cursor:pointer;}
+	.scr4>.close{ color: gray; position:absolute; top: 1px; right: 2px; cursor:pointer;}
+    a{ text-decoration: none;color: gray; }	
+	
+
+
+	footer{ font-size: 20px; color: white;
+			text-align: center; background-color: gray;
+			position: fixed; top: 80%; right: 3%;
+			padding: 15px 32px; margin: 10px 2px; border: none; 
+			cursor: pointer;}
+
+	#navbar {
+	  overflow: hidden;
+	  padding: 65px 25px;
+	  transition: 0.4s;
+	  position: fixed; top: 0; z-index: 99;
+	  width: 100%;
+	  background: rgba(255,255,255,0);
+	  box-sizing: border-box;
+	}
+	#navbar a {
+	  float: left;
+	  color: white;
+	  text-align: center;
+	  padding: 12px;
+	  text-decoration: none;
+	  font-size: 18px;
+	  line-height: 25px;
+	  border-radius: 4px;
+	  
+	}
+	#navbar a:hover {
+	  background-color: rgba(114,129,140,0.3);
+	  transition: 0.4s;
+	}
+	#navbar #nav05:hover{
+	  cursor: help;
+	}
+
+	#navbar #logo {
+	  font-size: 35px;
+	  font-weight: bold;
+	  transition: 0.4s;
+	}
+	#navbar-right {
+	  float: right;
+	}
+
+	</style>
+
+	<link rel="stylesheet" type="text/css" href="CSS/csshake.css">
+	
+	<script type="text/javascript">
+		function showscr1(){scr1.style.display="block"}
+		function showscr2(){scr2.style.display="block"}
+		function showscr3(){scr3.style.display="block"}
+		function showscr4(){scr4.style.display="block"}
+
+		function closescr1(){scr1.style.display="none"}
+		function closescr2(){scr2.style.display="none"}
+		function closescr3(){scr3.style.display="none"}
+        function closescr4(){scr4.style.display="none"}
+
+	</script>
+
+
+</head>
+<body style="margin: 0;  font-family: 微軟正黑體;background: url(IMG/about_1.jpg);background-repeat:no-repeat; height: 100%; background-size:100% 100%; background-attachment: fixed;">
+
+    <div id="navbar" id="top">
+		<a class="active" href="index.html" id="logo">馬來貘的第一個家</a>
+		<div id="navbar-right">
+			<a id="nav01" href="introduce.html" >馬來介紹</a>
+			<a id="nav02" href="merchandise.html">馬來周邊</a>
+			<a id="nav03" href="photo.html">馬來美照</a>
+			<a id="nav04" href="fuming.html">作者本人</a>
+			<a id="nav05" href="resume.html">作者履歷</a>
+			<a id="nav06" href="#">聯絡馬來</a>
+		</div>
+	</div>
+
+	
+	<div id="candybox2">Introduce</div>
+		
+	<div>
+		<img style="position: absolute; top: 5%; left: 25%; 
+					-moz-transform:rotate(15deg);
+					-webkit-transform:rotate(15deg);
+					-o-transform:rotate(15deg);
+					-ms-transform:rotate(15deg);
+					transform:rotate(15deg);" 
+			class="shake-slow" onclick="showscr1();"
+			src="IMG/one1.png" width="15%"
+			onmouseover="this.src='IMG/one2.png'" onmouseout="this.src='IMG/one1.png'" >	
+		<div id="scr1" class="scr1">
+			<div onclick="closescr1();" class="close">X</div>
+			<a href="https://www.instagram.com/wwt916/?hl=zh-tw" target="_blank"></a><h1>王惟彤</h1>
+			<p>內容內容內容內容內容內容</p>
+		</div>
+
+
+		<img style="position: absolute; top: 15%; right: 8%;
+					"
+				class="shake-crazy"
+				onclick="showscr2()"
+				src="IMG/two1.png" width="15%"
+				onmouseover="this.src='IMG/two2.png'" onmouseout="this.src='IMG/two1.png'" >
+		<div id="scr2" class="scr2">
+			<div onclick="closescr2();" class="close">X</div>
+			<a href="https://www.instagram.com/_yukai1202/?hl=zh-tw" target="_blank"></a><h1>蔡于凱</h1>
+			<p>內容內容內容內容內容內容</p>
+		</div>		
+
+		<img style="position: absolute; top: 33%; left: 13%;
+					-moz-transform:rotate(-30deg);
+					-webkit-transform:rotate(-30deg);
+					-o-transform:rotate(-30deg);
+					-ms-transform:rotate(-30deg);
+					transform:rotate(-30deg)"
+			class="shake-horizontal"
+			onclick="showscr3()"
+			src="IMG/three1.png" width="10%"
+			onmouseover="this.src='IMG/three2.png'" onmouseout="this.src='IMG/three1.png'" >
+		<div id="scr3" class="scr3">
+			<div onclick="closescr3();" class="close">X</div>
+			<a href="https://www.instagram.com/fu_ming_sohappy/?hl=zh-tw" target="_blank"><h1>陳福明</h1></a>
+			<p>大家好我因該是第一次真的再作網頁</p>
+			<p>覺得十分友趣，如果還有機會的話</p>
+			<p>我也不想再做一次。</p>
+		</div>		
+
+
+		<img style="position: absolute; top: 35%; right: 27% ;
+					-moz-transform:rotate(25deg);
+					-webkit-transform:rotate(25deg);
+					-o-transform:rotate(25deg);
+					-ms-transform:rotate(25deg);
+					transform:rotate(25deg);"
+				class="shake-opacity shake-horizontal"
+				onclick="showscr4()"
+				src="IMG/four1.png" width="16%"
+				onmouseover="this.src='IMG/four2.png'" onmouseout="this.src='IMG/four1.png'" >
+		<div id="scr4" class="scr4">
+			<div onclick="closescr4();" class="close">X</div>
+			<a href="https://www.instagram.com/mf23_1g/?hl=zh-tw" target="_blank"></a><h1>陳怡君</h1>
+			<p>內容內容內容內容內容內容</p>
+		</div>
+	</div>
+	
+	<!--<div id="Icon1" class="Icon1"><img src="ig2.png" height="10%" 
+		style="position: fixed; top:25%; left:35%; z-index: 9999;display: none;"></div>-->
+		
+
+	<footer>HOME</footer>
+	
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>旅平險保費試算</title>
+	<style type="text/css">
+		caption{padding: 20px;font-size: 30px;border-bottom: 3px gray solid;font-weight: bold;}
+		tr,td{border-bottom: 1px solid #ddd;}
+		td:nth-child(1),td:nth-child(3),td:nth-child(5){padding: 18px;background: #ff8080;color: white;}
+		td:nth-child(2),td:nth-child(4),td:nth-child(6){padding: 20px;}
+		select,input{font-family: MS UI Gothic;font-size: 25px;}
+		#navbar {
+		  overflow: hidden;
+		  padding: 65px 25px;
+		  transition: 0.4s;
+		  position: fixed; top: 0; z-index: 99;
+		  width: 100%;
+		  background: rgba(255,255,255,0);
+		  box-sizing: border-box;
+			font-family: "微軟正黑體";
+		}
+		#navbar a {
+		  float: left;
+		  color: white;
+		  text-align: center;
+		  padding: 12px;
+		  text-decoration: none;
+		  font-size: 18px;
+		  line-height: 25px;
+		  border-radius: 4px;
+		  
+		}
+		#navbar a:hover {
+		  background-color: rgba(114,129,140,0.3);
+		  transition: 0.4s;
+		}
+		#navbar #nav05:hover{
+		  cursor: help;
+		}
+
+		#navbar #logo {
+		  font-size: 35px;
+		  font-weight: bold;
+		  transition: 0.4s;
+		}
+		#navbar-right {
+		  float: right;
+		}
+		#box{
+			height: 150px;background: #3b3838;
+		}
+		table{
+			margin-left:auto; 
+			margin-right:auto;
+		}
+
+
+	</style>
+</head>
+<body style="font-family: 'MS UI Gothic';margin: 0;">
+
+	<div id="navbar" id="top">
+		<a class="active" href="index.html" id="logo">馬來貘的第一個家</a>
+		<div id="navbar-right">
+			<a id="nav01" href="introduce.html" >馬來介紹</a>
+			<a id="nav02" href="merchandise.html">馬來周邊</a>
+			<a id="nav03" href="photo.html">馬來美照</a>
+			<a id="nav04" href="fuming.html">作者本人</a>
+			<a id="nav05" href="resume.html">作者履歷</a>
+			<a id="nav06" href="about.html">聯絡馬來</a>
+		</div>
+	</div>
+	<div id="box"></div>
+
+	<table style=" font-size: 25px;background: gray;margin-top: 50px; ">
+	<caption>旅平險保費試算</caption>
+	<tr>
+		<td>旅遊地點</td>
+		<td><select size="1" name="palace">
+			<option value="00">請選擇</option>
+			<option value="01">國內</option>
+			<option value="02">中國大陸(直航)</option>
+			<option value="03">中國大陸</option>
+			<option value="04">東南亞</option>
+			<option value="05">其他</option>
+			<option value="06">日本</option>
+			<option value="07">美加</option>
+			<option value="08">歐洲</option>
+			<option value="09">全球</option>
+			<option value="10">紐澳</option></select>
+		</td>
+	</tr>
+	<tr>
+		<td>保險期間</td>
+		<td>開始<input type="date" name="SelectDate">
+			<select size="1" name="time">
+		<option value="t0">00:00</option>
+		<option value="t1">01:00</option>
+		<option value="t1">02:00</option>
+		<option value="t3">03:00</option>
+		<option value="t4">04:00</option>
+		<option value="t5">05:00</option>
+		<option value="t6">06:00</option>
+		<option value="t7">07:00</option>
+		<option value="t8">08:00</option>
+		<option value="t9">09:00</option>
+		<option value="t10">10:00</option>
+		<option value="t11">11:00</option>
+		<option value="t12">12:00</option>
+		<option value="t13">13:00</option>
+		<option value="t14">14:00</option>
+		<option value="t15">15:00</option>
+		<option value="t16">16:00</option>
+		<option value="t17">17:00</option>
+		<option value="t18">18:00</option>
+		<option value="t19">19:00</option>
+		<option value="t20">20:00</option>
+		<option value="t21">21:00</option>
+		<option value="t22">22:00</option>
+		<option value="t23">23:00</option>
+		<option value="t24">24:00</option></select>
+			結束<input type="date" name="SelectDate2">
+			共天
+		</td>
+	</tr>
+	<tr>
+		<td>生日</td>
+		<td>西元<select><option>1995</option></select>
+		年<select><option>01</option></select>
+		月<select><option>01</option></select>
+		日	歲</td>
+	</tr>
+
+	</table>
+	<div style="text-align: center;margin-top: 25px;">
+	<button type="submit" value="start" style="font-family: MS UI Gothic;font-size: 25px;padding: 20px;background: gray;color: white; ">開始試算</button>
+	</div>
+</body>
+</html>
