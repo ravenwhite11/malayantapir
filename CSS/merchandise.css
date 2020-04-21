@@ -1,0 +1,163 @@
+body{
+	font-family: "微軟正黑體";
+}
+* {box-sizing: border-box;} /* DIV設定的寬度已包含 內容寬度、內距、邊框寬度 */
+#navbar {
+  overflow: hidden;
+  padding: 65px 25px;
+  transition: 0.4s;
+  position: fixed; top: 0; z-index: 99;
+  width: 100%;
+  background: rgba(255,255,255,0);
+}
+#navbar a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+  
+}
+#navbar a:hover {
+  background-color: rgba(114,129,140,0.3);
+  transition: 0.4s;
+}
+#navbar #nav05:hover{
+  cursor: help;
+}
+
+#navbar #logo {
+  font-size: 35px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+#navbar-right {
+  float: right;
+}
+
+/*.topbox{
+	height: 200px;
+	background: url(../IMG/merchandise_02.png);}*/
+
+.one{
+	margin-left: 150px;margin-right: 150px;
+}
+.first{
+	background-color: ;height: 600px;
+}
+.second{
+	position: relative;top: 150px; left: 100px;
+}
+.second > h5{
+	line-height: 35px;
+}
+.h5_bloder{
+	font-weight: bold;
+}
+#goods_air{
+	position: relative;top: 150px; left: -100px;
+	margin: auto;
+	width: 150%;
+	box-shadow: 3px 3px 12px gray;
+}
+#goods_air:hover{
+	opacity: 0.7;
+	cursor: pointer;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 100; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+
+.third{
+	height: 80px;
+}
+.fourth{
+	height: 80px;
+}
+.btn01, .btn02{
+	position: relative;left: 20px;
+}
+
+
+h2{
+	text-align: center;
+	
+	
+}
+#store_img img{
+	margin-top: 50px; 
+	margin-bottom: 100px; 
+}
